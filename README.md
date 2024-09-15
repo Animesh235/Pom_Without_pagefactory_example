@@ -1,6 +1,6 @@
-# Portfolio Automation Framework
+# POM Automation Framework
 
-This project is an automation testing framework for the **Portfolio Website** built using **Selenium WebDriver**, **TestNG**, and **Maven**. The framework follows a **POM (Page Object Model)** structure, excluding the usage of the `PageFactory` class.
+This project is an automation testing framework for the **Website** built using **Selenium WebDriver**, **TestNG**, and **Maven**. The framework follows a **POM (Page Object Model)** structure, excluding the usage of the `PageFactory` class.
 
 ## Key Features
 - **Selenium WebDriver** for browser automation.
@@ -11,7 +11,7 @@ This project is an automation testing framework for the **Portfolio Website** bu
 ## Project Structure
 
 ```
-portfolio-automation/
+automation
 │
 ├── pom.xml
 ├── src
@@ -39,10 +39,10 @@ portfolio-automation/
 ### Key Folders and Files
 
 - **`pom.xml`**: Contains the project’s dependencies, plugins, and build configurations.
-- **`src/main/java/com/portfolio/base/BaseTest.java`**: The base class containing setup and teardown methods, initializing WebDriver.
-- **`src/main/java/com/portfolio/pages`**: Contains classes for each page of the portfolio website (e.g., `HomePage.java`, `ContactPage.java`), implementing the POM without PageFactory.
-- **`src/main/java/com/portfolio/utils/WebDriverFactory.java`**: Utility class responsible for WebDriver configuration and management.
-- **`src/test/java/com/portfolio/tests`**: Contains test classes where each class corresponds to tests for specific pages or features.
+- **`src/main/java/com/automation/base/BaseTest.java`**: The base class containing setup and teardown methods, initializing WebDriver.
+- **`src/main/java/com/automation/pages`**: Contains classes for each page of the portfolio website (e.g., `HomePage.java`, `ContactPage.java`), implementing the POM without PageFactory.
+- **`src/main/java/com/automation/utils/WebDriverFactory.java`**: Utility class responsible for WebDriver configuration and management.
+- **`src/test/java/com/automation/tests`**: Contains test classes where each class corresponds to tests for specific pages or features.
 - **`testng.xml`**: TestNG configuration file specifying which tests to run.
 
 ## Setup and Installation
@@ -53,21 +53,3 @@ portfolio-automation/
 - **Maven 3.6** or higher
 - **Git**
 - **ChromeDriver** or other WebDriver binaries
-
-### Steps
-
-1. Clone the repository:
-
-    ```sh
-    git clone https://github.com/username/portfolio-automation.git
-    cd portfolio-automation
-    ```
-
-2. Install dependencies:
-
-    ```sh
-    mvn clean install
-    ```
-
-3. Configure WebDriver:
-   - Make sure you have the appropriate WebDriver binaries (e.g., ChromeDriver, GeckoDriver) installed and set in your system path.
